@@ -1,0 +1,19 @@
+                $(document).ready(function(){
+                    $(".navbar").show();
+                    $(function(){
+                        $(window).scroll(function(){
+                            if($(this).scrollTop()>660){
+                                $('.navbar').addClass('opacity');
+                            }else{
+                                $(".navbar").removeClass('opacity');
+                            }
+                            if ($(window).width() < 768) { 
+                                $('.navbar').removeClass('opacity');
+                            }
+                            $('.navbar-toggle').click(function(){
+                                $('.navbar').addClass('opacity');
+                            });
+                        });
+                    });
+                });
+            
